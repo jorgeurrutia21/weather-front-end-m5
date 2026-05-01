@@ -1,0 +1,19 @@
+.body {
+    background: linear-gradient(135deg, #133167, #4d638c, #87ceeb);
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.heading {
+    &--primary {
+        color: white;
+        text-shadow: 6px 6px 11px #000000;
+    }
+
+    &--secondary {
+        color: white;
+        text-shadow: 2px 2px 6px #000000;
+        font-size: 3dvh;
+    }
+}

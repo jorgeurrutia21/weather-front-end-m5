@@ -1,0 +1,74 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.card {
+    &--ciudad {
+        @include card-hover;
+        // border: 1px solid #1f2937; //crea un linea fina alrededor de la card
+        // border-radius: 12px; //redondea la card para que no sea muy cuadrada
+    }
+
+    &__img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        // object-fit: contain;
+        display: block;
+        transition: transform 0.4s;
+    }
+
+    &--ciudad:hover &__img {
+        transform: scale(1);
+    }
+}
+
+.card {
+    &__info {
+        background-color: #3e799e; //ajusto el color del fondo de la card igual a las del footer y nav
+        color: #ffffff; //aqui el color delas letras
+        display: flex;
+        justify-content: space-between; //este card info es para ajustar la info de la card izquierda y derecha
+        align-items: flex-start;
+        padding: 1rem 1.5rem; //coloca un  espacio arriba y abajo y un poquito más de espacio a los lados
+    }
+    p {
+        font-weight: 600; //grozor de las letras dentro de las card
+    }
+}
+
+.detalle {
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px $shadow-dark;
+    color: $color-texto;
+    margin-bottom: 2rem;
+
+    &__container {
+        padding: 2rem;
+
+        @media (min-width: 768px) {
+            padding: 2rem;
+        }
+        p {
+            font-weight: 600; //grozor de las letras dentro de las card
+            font-size: medium;
+        }
+    }
+}
+
+//se AGREGO ESTA CLASE PARA AJUSTAR LA IMAGEN DE LA SECCION DETALLE
+.detalle__img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.conteo-item {
+    background-color: #111827;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}

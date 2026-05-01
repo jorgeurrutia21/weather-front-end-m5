@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+@mixin card-hover {
+    cursor: pointer;
+    transition:
+        transform 0.5s,
+        box-shadow 0.5s;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px $shadow-dark;
+    }
+}

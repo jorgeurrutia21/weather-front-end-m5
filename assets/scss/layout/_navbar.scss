@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+.navbar {
+    background-color: $color-primario;
+    color: $color-texto;
+    padding: 1rem 0;
+}
