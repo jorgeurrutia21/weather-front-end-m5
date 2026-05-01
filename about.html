@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>El Tiempo</title>
+
+        <link rel="icon" href="assets/img/nube.png" type="image/png" />
+
+        <!-- CSS Bootrstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Nuestro CSS -->
+    </head>
+
+    <body class="body d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#"
+                    ><i class="fa-solid fa-cloud-sun-rain"></i>El Tiempo</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a
+                            id="link-home"
+                            class="nav-link active"
+                            aria-current="page"
+                            href="index.html"
+                            >Home</a
+                        >
+
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                    <img
+                        src="assets/img/zonasyclimas.jpg"
+                        alt="Clima en Chile"
+                        class="img-fluid rounded shadow"
+                        width="500"
+                    />
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h1 class="heading heading--primary">
+                        Sobre esta Web y Algunos Detalles
+                    </h1>
+                    <p class="heading heading--secondary">
+                        Esta Web Muestra el clima en algunas ciudades de chile las temperaturas son obtenidas mediante la API <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> y aparte una pequeña descripcion de los distintos tipos de climas.
+                    <p>Clima Árido: se extiende desde Arica a La Serena, se caracteriza por recibir una alta radiación solar con una T° de 18°C, aire extremadamente seco y casi total ausencia de precipitaciones. Esto impide el desarrollo de vegetación y por lo tanto determina un paisaje desértico.</p>
+                    <p>Clima Semi Árido: conocido como clima de Estepa seca, entre La Serena y el norte de Santiago, caracterizado por presencia de precipitaciones ocasionales y una temperatura media más baja que la anterior. Permiten la existencia de formaciones vegetales de tipo xerófilo (adaptados a la aridez) y vegetación esclerófila (hojas duras y espinas).</p>
+                    <p>Clima Templado: es el más extendido a lo largo de Chile, con condiciones óptimas para el desarrollo de alta diversidad de formaciones vegetales. Sus variaciones se dividen en tres: Clima Templado Mediterráneo (desde el Valle del Maipo a Concepción), con la presencia de bosque esclerófilo en la zona central; Templado lluvioso (de Concepción a Puerto Montt); y Templado Marítimo (desde Puerto Montt a Coyhaique).</p>
+                    <p>Clima Frío: entre Coyhaique y Punta Arenas, caracterizado por una reducción de las precipitaciones (350 mm) y T° medias de 4 y 5º C, con fuertes vientos que condicionan la presencia de bosques subantárticos de lenga y estepa o pampa patagónica.</p>
+                    </p>
+                </div>
+            </div>
+        </header>
+        
+
+        <footer class="footer">
+            <div class="container">
+                        <p class="footer-brand">
+                            <i class="fa-solid fa-cloud-sun-rain"></i>
+                            <strong>ElTiempo</strong> &copy; 2026
+                        </p>
+
+                        <p class="footer-description">
+                            Consulta el clima actual y el pronóstico en
+                            distintas ciudades de Chile.
+                        </p>
+
+                        <p class="footer-author">
+                            Autor: <span>Jorge Urrutia</span>
+                        </p>               
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
