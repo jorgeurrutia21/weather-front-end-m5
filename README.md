@@ -5,7 +5,7 @@
 ## Ciudades incluidas
 
 Se seleccionaron 10 ciudades representativas de Chile (norte, centro y sur) pasando desde Antofagasta hasta Punta Arenas con el objetivo de
-mostrar la diversidad de climas a lo largo del territorio , toda la informacion se obtiene de la API Open-Meteo(https://open-meteo.com/) que no proporciona el estado del clima en tiempo real.
+mostrar la diversidad de climas a lo largo del territorio , toda la informacion se obtiene de la API Open-Meteo(https://open-meteo.com/) que nos proporciona el estado del clima en tiempo real.
 
 ---
 
